@@ -187,3 +187,51 @@ sumAsync(-5, 7).then((result) => {
 }).catch((error) => {
     console.log("Error received:", error);
 });*/
+
+/*
+// split the string at the first occurrence of x
+// return the larger of the two resulting strings
+// i.e. HappyxDeveloper => Developer
+function splitAtX(string) {
+    const index = string.indexOf('x');
+    console.log(index)
+    const a = string.slice(0, index);
+    console.log(a)
+    const b = string.slice(index + 1);
+    console.log(b)
+    return (a.length > b.length) ? a : b;
+}
+splitAtX("HappyxDeveloper");
+*/
+
+
+/*
+//Player Hand Score
+//The function playerHandScore that takes in a string of face cards (Jack, Queen, and King only) and returns the total score of the players hand.
+
+//The cards are represented by the first letter in the name of the card:
+
+//A "K" is 4 points
+//A "Q" is 3 points
+//A "J" is 2 points
+
+
+function playerHandScore(hand) {
+    const scores = {
+        "K": 4,
+        "Q": 3,
+        "J": 2
+    }
+
+    const handArr = hand.split("");
+    let sum = 0;
+    for (let i = 0; i < handArr.length; i++) {
+        const score = scores[handArr[i]];
+        sum += score;
+    }
+
+    return sum;
+}
+
+console.log(playerHandScore('KQQ'));
+*/
