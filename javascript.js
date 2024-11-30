@@ -235,3 +235,32 @@ function playerHandScore(hand) {
 
 console.log(playerHandScore('KQQ'));
 */
+
+/*
+//Given an array of integers and a number, num, find all the occurrences of the number and remove it from the array.
+
+//Modify the array directly and do not return anything from this function.
+
+const array = [1, 2, 3, 1];
+removeOccurrences(array,);
+console.log(array); // [2, 3]
+
+// given an array of integers
+// find all occurrences of num and remove them
+function removeOccurrences(array, num) {
+    for (let i = array.length - 1; i >= 0; i--) {
+        if (array[i] === num) {
+            array.splice(i, 1);
+        }
+    }
+}
+*/
+
+/*
+// array sort
+
+function sortUp(array) {
+    return array.sort((a, b) => a - b);
+}
+console.log(sortUp([3, 2, 4, 1]));
+*/
