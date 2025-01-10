@@ -1,0 +1,3 @@
+This course was created by Dr. Charles Severance (a.k.a. Dr. Chuck). He is a Clinical Professor at the University of Michigan School of Information, where he teaches various technology-oriented courses including programming, database design, and Web development.
+
+"Python for Everybody" by Dr. Chuck Severance and the University of Michigan is licensed under CC BY.
