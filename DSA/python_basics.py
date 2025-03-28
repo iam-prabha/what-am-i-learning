@@ -62,7 +62,7 @@ type(3.2 + 4.7)
 
 5 ** 3
 
-printt
+print(5 ** 3)
 
 y = 5
 
@@ -281,7 +281,7 @@ def add(a, b=4, c=5):
 
 add(a=5, c=2)
 
-!ls
+# !ls
 
 p = 'a_test.txt'
 
@@ -538,15 +538,15 @@ b
 
 a is b
 
-import numpy as np
+# import numpy as np
 
-np
+# np
 
-!pip list
+# !pip list
 
-num
+# num
 
-!ls
+# !ls
 
-!python test.py
+# !python test.py
 
