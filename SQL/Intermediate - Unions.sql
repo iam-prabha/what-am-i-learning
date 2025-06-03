@@ -50,7 +50,7 @@ WHERE age > 50;
 
 
 
-SELECT first_name, last_name, 'Old Lady' as Label
+SELECT first_name, last_name, 'Old Lady' as label
 FROM employee_demographics
 WHERE age > 40 AND gender = 'Female'
 UNION

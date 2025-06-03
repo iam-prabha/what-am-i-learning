@@ -35,12 +35,12 @@ GROUP BY occupation, salary
 ;
 
 -- now the most useful reason we use group by is so we can perform out aggregate functions on them
-SELECT gender, AVG(age)
+SELECT gender, AVG(age) as average_age
 FROM employee_demographics
 GROUP BY gender
 ;
 
-SELECT gender, MIN(age), MAX(age), COUNT(age),AVG(age)
+SELECT gender, MIN(age) min, MAX(age) max, COUNT(age) count,AVG(age) average_age
 FROM employee_demographics
 GROUP BY gender
 ;
@@ -57,7 +57,7 @@ GROUP BY gender
 #So let's try it out with our customer table
 #First let's start simple with just ordering by one column
 SELECT *
-FROM customers
+FROM employee_demographics
 ORDER BY first_name;
 
 #You can see that first name is ordered from a - z or Ascending.

@@ -43,7 +43,7 @@ WHERE salary >= 50000;
 -- When we change this delimiter it now reads in everything as one whole unit or query instead of stopping
 -- after the first semi colon
 DELIMITER $$
-CREATE PROCEDURE large_salaries2()
+CREATE PROCEDURE large_salaries4()
 BEGIN
 	SELECT *
 	FROM employee_salary
@@ -58,7 +58,7 @@ DELIMITER ;
 
 -- let's refresh to see the SP
 -- now we can run this stored procedure
-CALL large_salaries2();
+CALL large_salaries4();
 
 -- as you can see we have 2 outputs which are the 2 queries we had in our stored procedure
 

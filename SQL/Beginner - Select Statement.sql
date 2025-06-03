@@ -4,10 +4,9 @@
 -- we will discuss throughout this video
 
 #We can also select a specefic number of column based on our requirement. 
-
 #Now remember we can just select everything by saying:
 SELECT * 
-FROM parks_and_recreation.employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 #Let's try selecting a specific column
@@ -20,7 +19,7 @@ FROM employee_demographics;
 SELECT first_name, last_name
 FROM employee_demographics;
 
-#Now the order doesn't normall matter when selecting your columns.
+#Now the order doesn't normally matter when selecting your columns.
 #There are some use cases we will look at in later modules where the order of the column
 #Names in the select statement will matter, but for this you can put them in any order
 
@@ -40,12 +39,6 @@ FROM employee_demographics;
 #For example let's take a look at using a calculation in the select statement
 
 #You can see here we have the total_money_spent - we can perform calculations on this
-SELECT first_name,
- last_name,
- total_money_spent,
- total_money_spent + 100
-FROM customers;
-
 #See how it's pretty easy to read and to see which columns we are using.
 
 #Math in SQL does follow PEMDAS which stands for Parenthesis, Exponent, Multiplication,
@@ -72,10 +65,10 @@ FROM employee_salary;
 #One thing I wanted to show you about the select statement in this lesson is the DISTINCT Statement - this will return only unique values in
 #The output - and you won't have any duplicates
 
-SELECT department_id
+SELECT dept_id
 FROM employee_salary;
 
-SELECT DISTINCT department_id
+SELECT DISTINCT dept_id
 FROM employee_salary;
 
 #Now a lot happens in the select statement. We have an entire module dedicated to just the 

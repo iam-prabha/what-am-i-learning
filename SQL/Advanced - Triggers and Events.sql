@@ -66,7 +66,7 @@ WHERE employee_id = 13;
 -- All we have to do is delete them from the demographics table
 
 SELECT * 
-FROM parks_and_recreation.employee_demographics;
+FROM employee_demographics;
 
 SHOW EVENTS;
 
@@ -84,7 +84,7 @@ END $$
 
 -- if we run it again you can see Jerry is now fired -- or I mean retired
 SELECT * 
-FROM parks_and_recreation.employee_demographics;
+FROM employee_demographics;
 
 
 
