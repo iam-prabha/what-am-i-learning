@@ -29,14 +29,14 @@ FROM temp_table;
 -- the second way is much faster and my preferred method
 -- 2. Build it by inserting data into it - easier and faster
 
-CREATE TEMPORARY TABLE salary_over_50k
+CREATE TEMPORARY TABLE salary_over_50k2
 SELECT *
 FROM employee_salary
 WHERE salary > 50000;
 
 -- if we run this query we get our output
 SELECT *
-FROM temp_table_2;
+FROM salary_over_50k2;
 
 -- this is the primary way I've used temp tables especially if I'm just querying data and have some complex data I want to put into boxes or these temp tables to use later
 -- it helps me kind of categorize and separate it out
