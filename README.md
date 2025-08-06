@@ -1,1 +1,1 @@
-# The Data Science resources
+ The AI & ML Resources
