@@ -1,97 +1,79 @@
-# Linked Lists - Singly & Doubly Linked List
-
-from hmac import new
-from traceback import print_tb
-
-
-class SinglyNode:
-    def __init__(self, data, next=None):
+class Node:
+    def __init__(self, data):
         self.data = data
-        self.next = next
+        self.next = None
+        self.prev = None
 
     def __str__(self):
         return str(self.data)
+ 
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    # O(n)
+    def search(self, target):
+        current = self.head
+        while current:
+            if current.data == target:
+                return current 
+            current = current.next
+        return None
+
+    # O(1)
+    def insert(self, node):
+        node.next = self.head
+        if self.head:
+            self.head.prev = node
+
+        self.head = node
+        node.prev = None
+
+    # O(1)
+    def delete(self, node):
+        if node.prev is not None:
+            node.prev.next = node.next
+        else:
+            self.head = node.next
+        
+        if node.next is not None:
+            node.next.prev = node.prev
+
+    def print_list(list):
+        current = list.head
+        while current:
+            print(f'{current.data} -->', end=' ')
+            current = current.next
+
+        print('None')
+                
+
+def main():
+    ll = LinkedList()
+    ll.print_list()
+
+    ll.insert(Node(5))
+    ll.print_list()
+
+    ll.insert(Node(4))
+    ll.insert(Node(3))
+    ll.insert(Node(2))
+    ll.insert(Node(1))
+    ll.print_list()
+
+    node_to_delete = ll.search(4)
+    print(f'Deleting {node_to_delete}..')
+    ll.delete(node_to_delete)
+    ll.print_list()
+
+    node_to_delete = ll.search(2)
+    print(f'Deleting {node_to_delete}..')
+    ll.delete(node_to_delete)
+    ll.print_list()
+
+    print(ll.search(3))
+    print(ll.search(99))
 
 
-head = SinglyNode(1)
-a = SinglyNode(2)
-b = SinglyNode(3)
-c = SinglyNode(4)
-
-head.next = a
-a.next = b 
-b.next = c
-
-# print(head)
-
-# Traverse the list - o(n)
-current = head
-while current:
-    print(current)
-    current = current.next
-
-# Diplay - O(n)
-def display(head):
-  curr = head
-  elements = []
-  while curr:
-    elements.append(str(curr.data))
-    curr = curr.next
-  print(' -> '.join(elements))
-
-display(head)
-
-def search(head, data):
-    current = head
-    while current:
-        if data == current.data:
-            return True
-        current = current.next
-    return False
-
-print(search(head, 4))
-
-# Doubly Linked Lists
-
-class DoublyNode:
-    def __init__(self, data, next=None, prev=None):
-        self.data = data
-        self.next = next
-        self.prev = prev
-
-    def __str__(self):
-        return str(self.data)
-
-head = tail = DoublyNode(1)
-
-print(f'{head}  { tail}')
-
-
-# Diplay  - O(n)
-def display(head):
-  curr = head
-  elements = []
-  while curr:
-    elements.append(str(curr.data))
-    curr = curr.next
-  print(' -> '.join(elements))
-
-display(head)
-
-# Insert at beginning - O(1)
-def insert_at_beginning(head, tail, data):
-    new_node = DoublyNode(data, next=head)
-    head.prev = new_node
-    return new_node, tail
-
-head , tail  = insert_at_beginning(head, tail, 3)
-display(head)
-
-# Insert at end - O(n)
-def insert_at_end(head, tail, data):
-    new_node = DoublyNode(data, prev=tail)
-    tail.next = new_node
-    return head , new_node
-
-head , tail = insert_at_end(head, tail, 4)
-display(head)
+main()
