@@ -6,7 +6,7 @@ a = [1, 2, 3, 4, 5]
 a.append(6)
 
 # pop - remove at the end - on average O(1)
-a.pop()
+_ = a.pop()
 
 # insert ( not at the end ) - on average O(n)
 a.insert(2, 8)
@@ -30,13 +30,13 @@ print(len(a))
 # Strings
 
 # Append to end of string - O(n)
-s = 'hello'
+s = "hello"
 
-b = s + 'z'
+b = s + "z"
 
 # Check if something is in string - O(n)
-if 'f' in s:
-  print(True)
+if "f" in s:
+    print(True)
 
 # Access positions - O(1)
 print(s[2])
