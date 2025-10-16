@@ -1,5 +1,0 @@
-The quick brown fox jumps over the lazy dog.  
-Python is a powerful programming language used for web development, data science, and automation.  
-File handling in Python allows reading, writing, and appending files efficiently.  
-Exception handling helps prevent program crashes by catching errors gracefully.  
-This is a sample text file for demonstration purposes.
