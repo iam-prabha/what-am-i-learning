@@ -7,12 +7,12 @@ Implementation of fundamental data structures and algorithms in Python.
 ### Data Structures
 Common data structures implemented from scratch:
 
-- **00_arrays_and_strings.py** - Array operations, string manipulation
-- **01_linked_list.py** - Singly and doubly linked lists
-- **02_stacks.py** - Stack implementation and applications
-- **03_queue.py** - Queue, circular queue, deque
-- **04_hash_tables.py** - Hash maps, collision handling
-- **05_heap.py** - Min heap, max heap, priority queue
+- **data_structures/00_arrays_and_strings.py** - Array operations, string manipulation
+- **data_structures/01_linked_list.py** - Singly and doubly linked lists
+- **data_structures/02_stacks.py** - Stack implementation and applications
+- **data_structures/03_queue.py** - Queue, circular queue, deque
+- **data_structures/04_hash_tables.py** - Hash maps, collision handling
+- **data_structures/05_heap.py** - Min heap, max heap, priority queue
 
 ### Algorithms
 Classic algorithms organized by category:
@@ -49,6 +49,5 @@ Classic algorithms organized by category:
 
 ## 🔗 Resources
 
-- TOPIC.md - Comprehensive topic list
 - `../python/` - Python fundamentals
 - `../docs/` - Algorithm theory and analysis
