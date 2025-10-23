@@ -18,6 +18,7 @@
 
 ### Reference Materials
 - **Python Quick Reference** → `python/python_reference.md`
+- **Linux/Pacman Commands** → `linux/arch-pacman.md`
 - **PDF Resources** → `pdf's/`
 - **Learning Slides** → `python/slides/`
 
@@ -100,6 +101,7 @@ cd ml/supervised_learning/linear_regression
 - **Web Scraping** → `web_scraping/`
 - **JavaScript** → `javascript/`
 - **Statistics** → `statistics/`
+- **Linux** → `linux/` (includes Arch Linux Pacman cheat sheet)
 
 ---
 

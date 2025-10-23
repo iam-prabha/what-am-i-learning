@@ -14,18 +14,21 @@ Your code is functional, well-organized, and demonstrates solid understanding of
 ## ✅ Strengths
 
 ### 1. **Correct Implementations**
+
 - ✓ All Python files compile without syntax errors
 - ✓ Data structures are implemented correctly
 - ✓ Algorithms follow standard patterns
 - ✓ Multiprocessing/multithreading examples work properly
 
 ### 2. **Good Educational Value**
+
 - ✓ Clear examples for learning concepts
 - ✓ Time complexity annotations (O notation)
 - ✓ Practical use cases (cooking examples for concurrency)
 - ✓ Progressive difficulty in learning materials
 
 ### 3. **Code Organization**
+
 - ✓ Logical file structure
 - ✓ Separation of concerns
 - ✓ Proper use of classes and functions
@@ -37,6 +40,7 @@ Your code is functional, well-organized, and demonstrates solid understanding of
 ### 1. **Documentation Issues**
 
 #### Missing Docstrings
+
 ```python
 # ❌ CURRENT (python/13_decorator.py)
 def my_dec(func):
@@ -70,6 +74,7 @@ def my_dec(func):
 ```
 
 #### Incomplete Comments
+
 ```python
 # ❌ CURRENT (dsa/data_structures/01_linked_list.py)
 def print_list(list):  # Missing self parameter, inconsistent
@@ -88,6 +93,7 @@ def print_list(self):
 ### 2. **Code Style Issues**
 
 #### Inconsistent Naming
+
 ```python
 # ❌ MIXED STYLES
 def rice_making():      # snake_case ✓
@@ -97,6 +103,7 @@ s = "hello"             # single letter ✗ (use descriptive names)
 ```
 
 #### Magic Numbers
+
 ```python
 # ❌ CURRENT (python/11_multiprocessing.py)
 time.sleep(2)  # Why 2? What does this represent?
@@ -188,7 +195,7 @@ def measure_sequential():
     return time.time() - start
 ```
 
-### 7. **Missing __main__ Guards**
+### 7. **Missing **main** Guards**
 
 ```python
 # ❌ CURRENT (python/13_decorator.py)
@@ -232,12 +239,15 @@ if __name__ == '__main__':
 ## 📝 Specific File Recommendations
 
 ### python/11_multiprocessing.py
+
 **Issues:**
+
 - Commented code should be removed or explained
 - Missing function to measure sequential time
 - No error handling
 
 **Improvements:**
+
 ```python
 """
 Demonstration of multiprocessing vs sequential execution using cooking example.
@@ -287,12 +297,15 @@ if __name__ == '__main__':
 ```
 
 ### dsa/data_structures/01_linked_list.py
+
 **Issues:**
+
 - `print_list` should be instance method
 - Missing edge case handling
 - No `__len__` or `__iter__` methods
 
 **Improvements:**
+
 ```python
 class LinkedList:
     def __init__(self):
@@ -328,12 +341,15 @@ class LinkedList:
 ```
 
 ### dsa/data_structures/02_stacks.py
+
 **Issues:**
+
 - No bounds checking
 - Missing `peek()` method
 - No `__len__` or `is_empty()`
 
 **Improvements:**
+
 ```python
 class Stack:
     def __init__(self):
@@ -403,24 +419,28 @@ def test_is_empty():
 ## 📚 Code Quality Tools to Use
 
 1. **Linting:** `ruff` or `pylint`
+
    ```bash
    uv add --dev ruff
    ruff check .
    ```
 
 2. **Formatting:** `black`
+
    ```bash
    uv add --dev black
    black .
    ```
 
 3. **Type Checking:** `mypy`
+
    ```bash
    uv add --dev mypy
    mypy .
    ```
 
 4. **Testing:** `pytest`
+
    ```bash
    uv add --dev pytest
    pytest tests/
@@ -446,23 +466,27 @@ def test_is_empty():
 ## 🎯 Action Plan
 
 ### Week 1: Fix Critical Issues
+
 - [ ] Add error handling to web scraping
 - [ ] Fix LinkedList.print_list method
 - [ ] Add bounds checking to Stack/Queue
 - [ ] Add `if __name__ == '__main__'` guards
 
 ### Week 2: Improve Documentation
+
 - [ ] Add docstrings to all functions
 - [ ] Add module-level docstrings
 - [ ] Document time/space complexity
 - [ ] Create usage examples
 
 ### Week 3: Add Type Safety
+
 - [ ] Add type hints to all functions
 - [ ] Run mypy and fix issues
 - [ ] Use Optional, List, Dict types properly
 
 ### Week 4: Testing & Quality
+
 - [ ] Write unit tests for data structures
 - [ ] Set up pytest
 - [ ] Add GitHub Actions for CI

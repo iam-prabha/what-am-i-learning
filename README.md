@@ -116,6 +116,8 @@ what-am-i-learning/
 ├── statistics/                    # Statistical concepts
 ├── web_scraping/                  # Web scraping examples
 ├── javascript/                    # JavaScript fundamentals
+├── linux/                         # Linux administration and commands
+│   └── arch-pacman.md            # Arch Linux Pacman cheat sheet
 ├── projects/                      # Complete data science projects
 ├── data/                          # Centralized sample datasets
 ├── docs/                          # Extended documentation
@@ -167,6 +169,7 @@ what-am-i-learning/
 - **Statistics** - Statistical concepts and analysis
 - **Web Scraping** - Data extraction from websites
 - **Data Structures & Algorithms** - Problem-solving fundamentals
+- **Linux** - System administration and command-line tools (Arch Linux/Pacman)
 
 ## 💻 Usage
 
