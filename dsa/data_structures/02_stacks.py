@@ -25,9 +25,9 @@ class Stack:
 
 
 def main():
-    stack =  Stack()
+    stack = Stack()
     stack.print_stack()
-    
+
     stack.push(1)
     stack.print_stack()
     stack.push(2)
@@ -40,5 +40,6 @@ def main():
 
     stack.push(4)
     stack.print_stack()
+
 
 main()

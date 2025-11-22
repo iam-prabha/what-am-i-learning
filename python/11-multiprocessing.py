@@ -2,6 +2,7 @@
 import multiprocessing
 import time
 
+
 # Functions
 def rice_making():
     print("Making RICE: wash rice \n")
@@ -10,12 +11,15 @@ def rice_making():
     print("Making RICE: cook in cooker \n")
     time.sleep(2)
 
+
 def sambar_making():
     print("Making SAMBAR: cut and cook veges\n")
     time.sleep(2)
     print("Making SAMBAR: cook paruppu \n")
     time.sleep(2)
     print("Making SAMBAR: mix veges + paruppu\n")
+
+
 # # Time before multiprocessing
 # start = time.time()
 # rice_making()
@@ -24,12 +28,10 @@ def sambar_making():
 
 # print("Total time : ", end-start)
 
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     # Time after multiprocessing
     process_1 = multiprocessing.Process(target=rice_making)
     process_2 = multiprocessing.Process(target=sambar_making)
-
 
     start = time.time()
     # start process
@@ -41,4 +43,4 @@ if __name__ == '__main__':
     process_2.join()
     end = time.time()
 
-    print("Total time : ", end-start)
+    print("Total time : ", end - start)

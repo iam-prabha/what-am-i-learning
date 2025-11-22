@@ -14,6 +14,7 @@
 
 from collections import deque
 
+
 class Queue:
     def __init__(self):
         self.data = deque()
@@ -26,8 +27,6 @@ class Queue:
 
     def print_queue(self):
         print(self.data)
-
-
 
 
 def main():
@@ -49,4 +48,6 @@ def main():
 
     queue.dequeue()
     queue.print_queue()
+
+
 main()

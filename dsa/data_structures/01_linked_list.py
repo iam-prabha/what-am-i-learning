@@ -6,7 +6,7 @@ class Node:
 
     def __str__(self):
         return str(self.data)
- 
+
 
 class LinkedList:
     def __init__(self):
@@ -17,7 +17,7 @@ class LinkedList:
         current = self.head
         while current:
             if current.data == target:
-                return current 
+                return current
             current = current.next
         return None
 
@@ -36,18 +36,18 @@ class LinkedList:
             node.prev.next = node.next
         else:
             self.head = node.next
-        
+
         if node.next is not None:
             node.next.prev = node.prev
 
     def print_list(list):
         current = list.head
         while current:
-            print(f'{current.data} -->', end=' ')
+            print(f"{current.data} -->", end=" ")
             current = current.next
 
-        print('None')
-                
+        print("None")
+
 
 def main():
     ll = LinkedList()
@@ -63,12 +63,12 @@ def main():
     ll.print_list()
 
     node_to_delete = ll.search(4)
-    print(f'Deleting {node_to_delete}..')
+    print(f"Deleting {node_to_delete}..")
     ll.delete(node_to_delete)
     ll.print_list()
 
     node_to_delete = ll.search(2)
-    print(f'Deleting {node_to_delete}..')
+    print(f"Deleting {node_to_delete}..")
     ll.delete(node_to_delete)
     ll.print_list()
 

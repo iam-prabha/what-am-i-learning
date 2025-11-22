@@ -1,7 +1,7 @@
 # Hash Tables
 #
 # A hash table is a data structure that stores key-value pairs and allows for fast insertion, deletion, and lookup of values based on their keys.
-# 
+#
 # How it works:
 # - A hash function is used to convert the key into an index in an underlying array (the "table").
 # - The value is stored at the computed index.
@@ -15,35 +15,32 @@
 # - Implementing dictionaries/maps in programming languages (e.g., Python's dict).
 # - Caching, database indexing, and sets.
 
+
 def hashing_by_division(k, m):
-    return k % m 
+    return k % m
 
 
 def main():
-    dictionary = {
-        'a': 1,
-        'b': 2,
-        'c': 'gen z',
-        'd': True
-    }
+    dictionary = {"a": 1, "b": 2, "c": "gen z", "d": True}
 
     print(dictionary)
 
     # insert
-    dictionary['e'] = False
+    dictionary["e"] = False
     print(dictionary)
 
-    # delete 
-    dictionary.pop('a')
+    # delete
+    dictionary.pop("a")
     print(dictionary)
 
     # search
-    print(dictionary['b'])
+    print(dictionary["b"])
 
     # key = 50 , table size = 13
     k = 50
     m = 13
 
-    print(f'hash of 50 with table size 13 --> {hashing_by_division(k, m)}')
+    print(f"hash of 50 with table size 13 --> {hashing_by_division(k, m)}")
+
 
 main()
