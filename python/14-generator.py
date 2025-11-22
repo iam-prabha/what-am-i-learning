@@ -1,7 +1,7 @@
 # yield vs return
 
 # `yield` pauses the function and returns a value,
-# while `return` terminates the fuction
+# while `return` terminates the function
 
 
 def count_up_to(n):
