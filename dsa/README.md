@@ -13,13 +13,14 @@ Common data structures implemented from scratch:
 - **data_structures/03_queue.py** - Queue, circular queue, deque
 - **data_structures/04_hash_tables.py** - Hash maps, collision handling
 - **data_structures/05_heap.py** - Min heap, max heap, priority queue
+- **data_structures/reverse_str.py** - String reversal examples and techniques
 
 ### Algorithms
-Classic algorithms organized by category:
+Classic algorithms organized by category (implementations coming soon):
 
-- **algorithms/sorting/** - Bubble, merge, quick, heap sort
-- **algorithms/searching/** - Binary search, linear search
-- **algorithms/graph/** - BFS, DFS, shortest path
+- **algorithms/sorting/** - Sorting algorithms (bubble, merge, quick, heap sort)
+- **algorithms/searching/** - Search algorithms (binary search, linear search)
+- **algorithms/graph/** - Graph algorithms (BFS, DFS, shortest path)
 
 ## 🎯 Learning Path
 
@@ -47,7 +48,23 @@ Classic algorithms organized by category:
 | Hash Table    | N/A    | O(1)   | O(1)   | O(1)   |
 | Binary Heap   | N/A    | O(n)   | O(log n) | O(log n) |
 
+## 💻 Usage
+
+### Running Python Scripts
+```bash
+# From repository root
+uv run python dsa/data_structures/00_arrays_and_strings.py
+uv run python dsa/data_structures/01_linked_list.py
+# ... and so on
+```
+
+### Testing Implementations
+```bash
+# Run individual data structure tests
+uv run python -m pytest dsa/data_structures/ -v
+```
+
 ## 🔗 Resources
 
-- `../python/` - Python fundamentals
-- `../docs/` - Algorithm theory and analysis
+- Python fundamentals: `../python/`
+- Algorithm theory: See `algorithms/README.md` for detailed algorithm documentation

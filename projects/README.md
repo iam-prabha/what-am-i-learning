@@ -29,16 +29,19 @@ Each project follows the standard data science workflow:
 
 ## 📊 Sample Datasets
 
-Project datasets are stored in the `data/` subdirectory.
+Project datasets are stored in the `data/` subdirectory:
+- **yellow_tripdata_2025-03.parquet** - Sample taxi trip data (Parquet format)
+
+Additional datasets can be found in the main `../data/` directory.
 
 ## 🔧 Technologies Used
 
 - **Python** - Primary programming language
-- **Pandas** - Data manipulation
+- **Pandas** - Data manipulation and analysis
 - **NumPy** - Numerical computing
-- **Matplotlib/Seaborn** - Visualization
-- **Scikit-learn** - Machine learning
-- **TensorFlow** - Deep learning (if applicable)
+- **Matplotlib/Seaborn** - Data visualization
+- **Scikit-learn** - Machine learning algorithms
+- **PyTorch** - Deep learning (if applicable)
 
 ## 💡 Best Practices
 
@@ -60,11 +63,23 @@ Project datasets are stored in the `data/` subdirectory.
 ## 🚀 Getting Started
 
 ```bash
-# Navigate to projects directory
-cd projects
+# From repository root, launch Jupyter
+uv run jupyter notebook projects/
 
-# Launch Jupyter
-jupyter notebook Data_sicence_project_workflow.ipynb
+# Or navigate to projects directory first
+cd projects
+uv run jupyter notebook Data_sicence_project_workflow.ipynb
+```
+
+### Loading Project Data
+```python
+import pandas as pd
+
+# Load project-specific data
+df = pd.read_parquet('data/yellow_tripdata_2025-03.parquet')
+
+# Or load from main data directory
+df = pd.read_csv('../data/fish_dataset.csv')
 ```
 
 ## 📚 Additional Projects

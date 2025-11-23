@@ -5,24 +5,25 @@ This directory contains comprehensive Python learning materials covering fundame
 ## 📚 Contents
 
 ### Core Python Concepts
-- **01_data_types.ipynb** - Variables, data types, type conversion
-- **02_loops_and_conditional.ipynb** - Control flow, if/else, for/while loops
-- **03_functions.ipynb** - Function definitions, parameters, scope, lambda functions
-- **04_data_structures.ipynb** - Lists, tuples, sets, dictionaries
-- **05_oops_concept.ipynb** - Classes, objects, inheritance, polymorphism
+- **01-data_types.ipynb** - Variables, data types, type conversion
+- **02-loops_and_conditional.ipynb** - Control flow, if/else, for/while loops
+- **03-functions.ipynb** - Function definitions, parameters, scope, lambda functions
+- **04-data_structures.ipynb** - Lists, tuples, sets, dictionaries
+- **05-oops_concept.ipynb** - Classes, objects, inheritance, polymorphism
 
 ### Data Science Libraries
-- **06_numpy.ipynb** - NumPy arrays, operations, linear algebra
-- **07_pandas.ipynb** - DataFrames, data manipulation, analysis
-- **08_matplotlib.ipynb** - Data visualization, plotting basics
-- **09_seaborn.ipynb** - Statistical visualizations, advanced plots
+- **06-numpy.ipynb** - NumPy arrays, operations, linear algebra
+- **07-pandas.ipynb** - DataFrames, data manipulation, analysis
+- **08-matplotlib.ipynb** - Data visualization, plotting basics
+- **09-seaborn.ipynb** - Statistical visualizations, advanced plots
 
 ### Advanced Concepts
-- **10_exception_handling.ipynb** - Try/except, error handling
-- **11_multiprocessing.py** - Parallel processing, CPU-bound tasks
-- **12_multithreading.py** - Concurrent execution, I/O-bound tasks
-- **13_decorator.py** - Function decorators, metaprogramming
-- **14_generator.py** - Generator functions, memory efficiency
+- **10-exception_handling.ipynb** - Try/except, error handling
+- **11-multiprocessing.py** - Parallel processing, CPU-bound tasks
+- **12-multithreading.py** - Concurrent execution, I/O-bound tasks
+- **13-decorator.py** - Function decorators, metaprogramming
+- **14-generator.py** - Generator functions, memory efficiency
+- **pattern.ipynb** - Pattern programming exercises and examples
 
 ## 🎯 Learning Path
 
@@ -38,5 +39,32 @@ Sample datasets are now located in the `../data/` directory.
 
 ## 📖 Additional Resources
 
-- **python_reference.md** - Quick reference for Python syntax and keywords
-- **slides/** - Presentation materials and learning aids
+- **slides/** - Presentation materials and learning aids (PowerPoint presentations and handouts)
+- **sample.txt** - Sample text file for file I/O examples
+
+## 💻 Usage
+
+### Running Jupyter Notebooks
+```bash
+# From repository root
+uv run jupyter notebook python/
+
+# Or navigate to this directory first
+cd python
+uv run jupyter notebook
+```
+
+### Running Python Scripts
+```bash
+# From repository root
+uv run python python/11-multiprocessing.py
+uv run python python/12-multithreading.py
+uv run python python/13-decorator.py
+uv run python python/14-generator.py
+```
+
+## 🔗 Related Content
+
+- Data Science Projects: `../projects/`
+- Machine Learning: `../ml/`
+- Sample Datasets: `../data/`

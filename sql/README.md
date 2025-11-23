@@ -69,8 +69,40 @@ SOURCE beginner/00_parks_and_rec_create_db.sql;
 | Join | `FROM t1 JOIN t2 ON t1.id = t2.id` |
 | Subquery | `WHERE column IN (SELECT ...)` |
 
+## 💻 Usage
+
+### Running SQL Files
+```bash
+# Using MySQL command line
+mysql -u username -p < sql/beginner/01_select_statement.sql
+
+# Or connect to MySQL and source the file
+mysql -u username -p
+USE parks_and_recreation;
+SOURCE sql/beginner/01_select_statement.sql;
+```
+
+### Using with Python
+```python
+import mysql.connector
+
+# Connect to database
+conn = mysql.connector.connect(
+    host='localhost',
+    user='username',
+    password='password',
+    database='parks_and_recreation'
+)
+
+# Execute queries
+cursor = conn.cursor()
+with open('sql/beginner/01_select_statement.sql', 'r') as file:
+    cursor.execute(file.read())
+```
+
 ## 🔗 Related Content
 
-- Data analysis: `../python/07_pandas.ipynb`
+- Data analysis: `../python/07-pandas.ipynb`
 - Projects: `../projects/`
 - Statistics: `../statistics/`
+- Python fundamentals: `../python/`

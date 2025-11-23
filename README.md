@@ -4,6 +4,7 @@ A comprehensive repository of resources, code, and tools for Python, Data Scienc
 
 ## 📚 Table of Contents
 
+- [Overview](#-overview)
 - [Getting Started](#-getting-started)
 - [Repository Structure](#-repository-structure)
 - [Technologies Covered](#-technologies-covered)
@@ -15,6 +16,22 @@ A comprehensive repository of resources, code, and tools for Python, Data Scienc
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Acknowledgments](#-acknowledgments)
+
+## 🎯 Overview
+
+This repository is a comprehensive learning resource covering:
+
+- **Python Fundamentals** - From basics to advanced concepts
+- **Data Science** - NumPy, Pandas, Matplotlib, Seaborn
+- **Machine Learning** - Supervised and unsupervised learning algorithms
+- **Deep Learning** - Neural networks, CNNs, RNNs using PyTorch
+- **Data Structures & Algorithms** - Implementation and practice
+- **SQL** - Database queries from beginner to advanced
+- **Statistics** - Statistical concepts and analysis
+- **Web Scraping** - Data extraction techniques
+- **Projects** - End-to-end data science workflows
+
+Each directory contains well-organized learning materials, code examples, and documentation to support your learning journey.
 
 ## 🚀 Getting Started
 
@@ -40,60 +57,78 @@ uv sync
 
 3. Start learning! 🎓
 
+### Quick Start Guide
+
+- **New to Python?** Start with `python/01-data_types.ipynb`
+- **Want to learn ML?** Check out `ml/supervised_learning/`
+- **Interested in Deep Learning?** Begin with `deep_learning/01-neural-network/`
+- **Need SQL practice?** Start with `sql/beginner/`
+- **Working on a project?** See `projects/Data_sicence_project_workflow.ipynb`
+
 ## 📁 Repository Structure
 
 ```
 what-am-i-learning/
 ├── python/                          # Python fundamentals
-│   ├── 01_data_types.ipynb         # Data types and variables
-│   ├── 02_loops_and_conditional.ipynb
-│   ├── 03_functions.ipynb
-│   ├── 04_data_structures.ipynb
-│   ├── 05_oops_concept.ipynb
-│   ├── 06_numpy.ipynb              # NumPy for numerical computing
-│   ├── 07_pandas.ipynb             # Pandas for data manipulation
-│   ├── 08_matplotlib.ipynb         # Matplotlib for plotting
-│   ├── 09_seaborn.ipynb            # Seaborn for statistical visualization
-│   ├── 10_exception_handling.ipynb
-│   ├── 11_multiprocessing.py
-│   ├── 12_multithreading.py
-│   ├── 13_decorator.py
-│   ├── 14_generator.py
-│   ├── python_reference.md         # Quick Python syntax reference
+│   ├── 01-data_types.ipynb         # Data types and variables
+│   ├── 02-loops_and_conditional.ipynb
+│   ├── 03-functions.ipynb
+│   ├── 04-data_structures.ipynb
+│   ├── 05-oops_concept.ipynb
+│   ├── 06-numpy.ipynb              # NumPy for numerical computing
+│   ├── 07-pandas.ipynb             # Pandas for data manipulation
+│   ├── 08-matplotlib.ipynb         # Matplotlib for plotting
+│   ├── 09-seaborn.ipynb            # Seaborn for statistical visualization
+│   ├── 10-exception_handling.ipynb
+│   ├── 11-multiprocessing.py
+│   ├── 12-multithreading.py
+│   ├── 13-decorator.py
+│   ├── 14-generator.py
+│   ├── pattern.ipynb               # Pattern programming exercises
+│   ├── README.md                   # Python learning guide
 │   └── slides/                     # Learning slides and materials
+│
 ├── ml/                             # Machine Learning
 │   ├── supervised_learning/
-│   │   ├── linear_regression/
-│   │   ├── logistic_regression/
-│   │   ├── decision_tree/
-│   │   ├── random_forest/
-│   │   ├── svm/
-│   │   ├── knn/
-│   │   ├── naive_bayes/
-│   │   ├── adaboost/
-│   │   └── gradient_boosting/
-│   └── unsupervised_learning/
-│       ├── k_means_clustering/
-│       └── pca/
-├── deep_learning/                  # Deep Learning with TensorFlow
-│   └── tensorflow/
-│       ├── 00_tensorflow_fundamentals/
-│       ├── 01_artificial_neural_networks/
-│       ├── 02_first_neural_network/
-│       └── 03_convolutional_neural_networks/
-├── dsa/                           # Data Structures & Algorithms
+│   │   ├── 01-linear_regression/
+│   │   ├── 02-logistic_regression/
+│   │   ├── 03-decision_tree/
+│   │   ├── 04-random_forest/
+│   │   ├── 05-naive_bayes/
+│   │   ├── 06-svm/
+│   │   ├── 07-knn/
+│   │   ├── 08-gradient_boosting/
+│   │   └── 09-adaboost/
+│   ├── unsupervised_learning/
+│   │   ├── 01-k_means_clustering/
+│   │   └── 02-pca/
+│   └── README.md                   # ML learning guide
+│
+├── deep_learning/                  # Deep Learning with PyTorch
+│   ├── 01-neural-network/
+│   │   └── neural-network.ipynb
+│   ├── 02-convolutional-neural-network/
+│   │   ├── cnn.ipynb
+│   │   └── data/MNIST/             # MNIST dataset
+│   └── 03-recurrent-neural/
+│       └── rnn.ipynb
+│
+├── dsa/                            # Data Structures & Algorithms
 │   ├── data_structures/
 │   │   ├── 00_arrays_and_strings.py
 │   │   ├── 01_linked_list.py
 │   │   ├── 02_stacks.py
 │   │   ├── 03_queue.py
 │   │   ├── 04_hash_tables.py
-│   │   └── 05_heap.py
-│   └── algorithms/
-│       ├── sorting/
-│       ├── searching/
-│       └── graph/
-├── sql/                           # SQL queries and examples
+│   │   ├── 05_heap.py
+│   │   └── reverse_str.py
+│   ├── algorithms/
+│   │   ├── sorting/
+│   │   ├── searching/
+│   │   └── graph/
+│   └── README.md                   # DSA learning guide
+│
+├── sql/                            # SQL queries and examples
 │   ├── beginner/
 │   │   ├── 00_parks_and_rec_create_db.sql
 │   │   ├── 01_select_statement.sql
@@ -108,21 +143,50 @@ what-am-i-learning/
 │   │   ├── 04_case_statements.sql
 │   │   ├── 05_subqueries.sql
 │   │   └── 06_window_functions.sql
-│   └── advanced/
-│       ├── 01_ctes.sql
-│       ├── 02_temp_tables.sql
-│       ├── 03_stored_procedures.sql
-│       └── 04_triggers_and_events.sql
-├── statistics/                    # Statistical concepts
-├── web_scraping/                  # Web scraping examples
-├── javascript/                    # JavaScript fundamentals
-├── linux/                         # Linux administration and commands
-│   └── arch-pacman.md            # Arch Linux Pacman cheat sheet
-├── projects/                      # Complete data science projects
-├── data/                          # Centralized sample datasets
-├── docs/                          # Extended documentation
-├── scripts/                       # Utility scripts and tools
-└── pdf's/                         # Reference materials
+│   ├── advanced/
+│   │   ├── 01_ctes.sql
+│   │   ├── 02_temp_tables.sql
+│   │   ├── 03_stored_procedures.sql
+│   │   └── 04_triggers_and_events.sql
+│   └── README.md                   # SQL learning guide
+│
+├── statistics/                     # Statistical concepts
+│   ├── normaliation-vs-standardization.ipynb
+│   └── statistics.md
+│
+├── web_scraping/                   # Web scraping examples
+│   ├── 00-request_module.py
+│   └── 01-beautifulsoup.py
+│
+├── javascript/                     # JavaScript fundamentals
+│   └── javascript.js
+│
+├── linux/                          # Linux administration and commands
+│   └── arch-pacman.md              # Arch Linux Pacman cheat sheet
+│
+├── projects/                       # Complete data science projects
+│   ├── Data_sicence_project_workflow.ipynb
+│   ├── data/                       # Project-specific datasets
+│   └── README.md                   # Projects guide
+│
+├── data/                           # Centralized sample datasets
+│   ├── chennai_cyclones.csv
+│   ├── fish_dataset.csv
+│   ├── my_data.csv
+│   ├── public_holidays_dataset.csv
+│   └── README.md                   # Dataset documentation
+│
+├── docker/                         # Docker resources
+│   └── README.md
+│
+├── pdf's/                          # Reference materials
+│   └── An Introduction to Statistical Learning.pdf
+│
+├── pyproject.toml                  # Project configuration
+├── requirements.txt                # Python dependencies
+├── requirements.in                 # Dependency source file
+├── uv.lock                         # Lock file for uv
+└── LICENSE                         # MIT License
 ```
 
 ## 🛠️ Technologies Covered
@@ -159,10 +223,10 @@ what-am-i-learning/
   - Principal Component Analysis (PCA)
 
 ### Deep Learning
-- **TensorFlow Fundamentals** - Core concepts and operations
-- **Artificial Neural Networks** - Building and training ANNs
-- **Convolutional Neural Networks** - Image processing and computer vision
-- **Keras** - High-level neural network API
+- **Neural Networks** - Building and training artificial neural networks
+- **Convolutional Neural Networks (CNNs)** - Image processing and computer vision
+- **Recurrent Neural Networks (RNNs)** - Sequence modeling and time series
+- **PyTorch** - Deep learning framework (torch, torchvision, torchaudio)
 
 ### Additional Technologies
 - **SQL** - Database queries and data manipulation
@@ -245,7 +309,8 @@ This project uses `uv` for dependency management. Key packages include:
 
 ### Core Dependencies
 - **Data Science**: numpy, pandas, matplotlib, seaborn
-- **Machine Learning**: scikit-learn, tensorflow
+- **Machine Learning**: scikit-learn
+- **Deep Learning**: torch, torchvision, torchaudio (PyTorch ecosystem)
 - **Web Scraping**: requests, beautifulsoup4
 - **Jupyter**: jupyter, ipykernel
 
@@ -264,12 +329,47 @@ See `pyproject.toml` for the complete list of dependencies and versions.
 
 ## 🎯 Learning Path
 
-1. **Start with Python fundamentals** (`python/` directory)
-2. **Explore data science tools** (NumPy, Pandas, Matplotlib, Seaborn)
-3. **Dive into machine learning** (`ml/` directory)
-4. **Learn deep learning** (`deep_learning/` directory)
-5. **Practice algorithms** (`dsa/` directory)
-6. **Work on projects** (`projects/`)
+### Recommended Learning Order
+
+1. **Python Fundamentals** (`python/` directory)
+   - Start with data types, control flow, and functions
+   - Progress to OOP, data structures, and exception handling
+   - Master data science libraries (NumPy, Pandas, Matplotlib, Seaborn)
+   - Explore advanced topics (multiprocessing, multithreading, decorators, generators)
+
+2. **Data Science Tools** (`python/` notebooks 06-09)
+   - NumPy for numerical computing
+   - Pandas for data manipulation
+   - Matplotlib and Seaborn for visualization
+
+3. **Statistics** (`statistics/` directory)
+   - Normalization vs standardization
+   - Statistical concepts and analysis
+
+4. **SQL** (`sql/` directory)
+   - Begin with basic SELECT statements
+   - Progress through joins, subqueries, and window functions
+   - Master advanced topics like CTEs and stored procedures
+
+5. **Machine Learning** (`ml/` directory)
+   - Start with supervised learning (linear regression, logistic regression)
+   - Explore tree-based methods (decision trees, random forest)
+   - Learn ensemble methods (gradient boosting, AdaBoost)
+   - Dive into unsupervised learning (K-means, PCA)
+
+6. **Deep Learning** (`deep_learning/` directory)
+   - Begin with neural networks fundamentals
+   - Learn convolutional neural networks (CNNs)
+   - Explore recurrent neural networks (RNNs)
+
+7. **Data Structures & Algorithms** (`dsa/` directory)
+   - Implement fundamental data structures
+   - Practice sorting and searching algorithms
+   - Solve graph problems
+
+8. **Projects** (`projects/` directory)
+   - Apply all concepts in end-to-end projects
+   - Follow the data science workflow notebook
 
 See [QUICK_REFERENCE.md](QUICK_REFERENCE.md) for a detailed learning roadmap with time estimates.
 
@@ -278,20 +378,24 @@ See [QUICK_REFERENCE.md](QUICK_REFERENCE.md) for a detailed learning roadmap wit
 This repository includes comprehensive documentation:
 
 - **[README.md](README.md)** - Main overview and getting started guide (this file)
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick navigation guide and learning path
-- **[REORGANIZATION_SUMMARY.md](REORGANIZATION_SUMMARY.md)** - Detailed list of structural improvements
-- **[CODE_QUALITY_REPORT.md](CODE_QUALITY_REPORT.md)** - Code quality analysis and improvement recommendations
-- **Directory READMEs** - Each major directory has its own README with specific guidance
+- **Directory READMEs** - Each major directory has its own README with specific guidance:
+  - [Python README](python/README.md) - Python fundamentals guide
+  - [ML README](ml/README.md) - Machine learning algorithms overview
+  - [DSA README](dsa/README.md) - Data structures and algorithms guide
+  - [SQL README](sql/README.md) - SQL learning path
+  - [Projects README](projects/README.md) - Project workflow guide
+  - [Data README](data/README.md) - Dataset documentation
 
 ## 🔍 Code Quality
 
-This repository maintains good code quality standards. See [CODE_QUALITY_REPORT.md](CODE_QUALITY_REPORT.md) for:
+This repository maintains good code quality standards with the following tools:
 
-- Comprehensive code analysis (**Grade: B+**)
-- Best practices and recommendations
-- Code improvement roadmap
-- Testing guidelines
-- Style guide compliance
+### Code Quality Tools
+
+- **Black** - Code formatting for consistent style
+- **Flake8** - Linting for code quality and PEP 8 compliance
+- **MyPy** - Static type checking
+- **Pytest** - Testing framework
 
 ### Quick Quality Check
 ```bash
@@ -299,17 +403,25 @@ This repository maintains good code quality standards. See [CODE_QUALITY_REPORT.
 uv sync --group dev
 
 # Format code
-black .
+uv run black .
 
 # Lint code
-flake8 .
+uv run flake8 .
 
 # Type check
-mypy .
+uv run mypy .
 
 # Run tests (when available)
-pytest tests/
+uv run pytest tests/
 ```
+
+### Code Style Guidelines
+
+- Follow PEP 8 style guide for Python code
+- Use meaningful variable and function names
+- Add docstrings to functions and classes
+- Keep functions focused and single-purpose
+- Comment complex logic and algorithms
 
 ## 🤝 Contributing
 
@@ -336,8 +448,8 @@ This is a personal learning repository, but suggestions and improvements are wel
 - Improve documentation
 - Add unit tests
 - Fix code quality issues
-
-See [CODE_QUALITY_REPORT.md](CODE_QUALITY_REPORT.md) for areas that need improvement.
+- Add more examples and use cases
+- Improve code comments and docstrings
 
 ## 📄 License
 
@@ -370,7 +482,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### Quick Links
-- 📖 [Quick Reference Guide](QUICK_REFERENCE.md) - Fast navigation and learning tips
-- 🔧 [Code Quality Report](CODE_QUALITY_REPORT.md) - Quality analysis and improvements
-- 📋 [Reorganization Summary](REORGANIZATION_SUMMARY.md) - Structural changes documentation
+## 🔗 Quick Links
+
+### Directory Guides
+- 📖 [Python Fundamentals](python/README.md) - Python learning guide
+- 🤖 [Machine Learning](ml/README.md) - ML algorithms overview
+- 🧮 [Data Structures & Algorithms](dsa/README.md) - DSA implementation guide
+- 🗄️ [SQL Learning](sql/README.md) - SQL tutorials and examples
+- 📊 [Projects](projects/README.md) - Data science project workflows
+- 📁 [Datasets](data/README.md) - Sample datasets documentation
+
+### Key Resources
+- 📚 [Statistics](statistics/) - Statistical concepts and analysis
+- 🕷️ [Web Scraping](web_scraping/) - Data extraction examples
+- 🐧 [Linux](linux/) - Linux administration guides
+- 🐳 [Docker](docker/) - Docker resources
+
+---
+
+## 📝 Notes
+
+- All Jupyter notebooks are organized by topic and difficulty level
+- Sample datasets are centralized in the `data/` directory
+- Each major directory contains its own README with specific guidance
+- Code examples are well-commented and include explanations
+- Projects follow a standard data science workflow
