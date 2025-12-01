@@ -2,6 +2,11 @@
 
 Complete end-to-end data science projects demonstrating real-world applications.
 
+## **Data credit**
+
+Data documention pdf - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+dataset (yellow_trip 2025) - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
 ## 📁 Contents
 
 ### Data Science Project Workflow
@@ -29,10 +34,10 @@ Each project follows the standard data science workflow:
 
 ## 📊 Sample Datasets
 
-Project datasets are stored in the `data/` subdirectory:
+Project datasets are stored in the main `../data/` directory:
 - **yellow_tripdata_2025-03.parquet** - Sample taxi trip data (Parquet format)
 
-Additional datasets can be found in the main `../data/` directory.
+Additional datasets can also be found in the main `../data/` directory.
 
 ## 🔧 Technologies Used
 
@@ -76,7 +81,7 @@ uv run jupyter notebook Data_sicence_project_workflow.ipynb
 import pandas as pd
 
 # Load project-specific data
-df = pd.read_parquet('data/yellow_tripdata_2025-03.parquet')
+df = pd.read_parquet('../data/yellow_tripdata_2025-03.parquet')
 
 # Or load from main data directory
 df = pd.read_csv('../data/fish_dataset.csv')

@@ -24,6 +24,12 @@ Centralized location for all sample datasets used throughout the learning materi
 - **Use Cases**: Date/time analysis, calendar operations
 - **Used In**: Pandas date handling examples
 
+### Yellow Taxi Trip Data (yellow_tripdata_2025-03.parquet)
+- **Description**: NYC yellow taxi trip records for March 2025
+- **Use Cases**: Data science project workflows, time series analysis, feature engineering
+- **Used In**: Complete data science project examples
+- **Source**: [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+
 ## 🔗 Dataset Sources
 
 Datasets are referenced across multiple directories:
@@ -47,6 +53,9 @@ df = pd.read_csv('../../data/chennai_cyclones.csv')
 
 # From project directory
 df = pd.read_csv('../data/public_holidays_dataset.csv')
+
+# Loading Parquet files
+df = pd.read_parquet('../data/yellow_tripdata_2025-03.parquet')
 ```
 
 ## ➕ Adding New Datasets

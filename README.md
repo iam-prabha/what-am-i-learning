@@ -166,7 +166,6 @@ what-am-i-learning/
 │
 ├── projects/                       # Complete data science projects
 │   ├── Data_sicence_project_workflow.ipynb
-│   ├── data/                       # Project-specific datasets
 │   └── README.md                   # Projects guide
 │
 ├── data/                           # Centralized sample datasets
