@@ -59,35 +59,36 @@ uv sync
 
 ### Quick Start Guide
 
-- **New to Python?** Start with `python/01-data_types.ipynb`
+- **New to Python?** Start with `python/01-data_types.py`
 - **Want to learn ML?** Check out `ml/supervised_learning/`
 - **Interested in Deep Learning?** Begin with `deep_learning/01-neural-network/`
 - **Need SQL practice?** Start with `sql/beginner/`
-- **Working on a project?** See `projects/Data_sicence_project_workflow.ipynb`
+- **Working on a project?** See `projects/Data_sicence_project_workflow.py`
 
 ## 📁 Repository Structure
 
 ```
 what-am-i-learning/
 ├── python/                          # Python fundamentals
-│   ├── 01-data_types.ipynb         # Data types and variables
-│   ├── 02-loops_and_conditional.ipynb
-│   ├── 03-functions.ipynb
-│   ├── 04-data_structures.ipynb
-│   ├── 05-oops_concept.ipynb
-│   ├── 06-numpy.ipynb              # NumPy for numerical computing
-│   ├── 07-pandas.ipynb             # Pandas for data manipulation
-│   ├── 08-matplotlib.ipynb         # Matplotlib for plotting
-│   ├── 09-seaborn.ipynb            # Seaborn for statistical visualization
-│   ├── 10-exception_handling.ipynb
+│   ├── 01-data_types.py            # Data types and variables
+│   ├── 02-loops_and_conditional.py
+│   ├── 03-functions.py
+│   ├── 04-data_structures.py
+│   ├── 05-oops_concept.py
+│   ├── 06-numpy.py                 # NumPy for numerical computing
+│   ├── 07-pandas.py                # Pandas for data manipulation
+│   ├── 08-matplotlib.py            # Matplotlib for plotting
+│   ├── 09-seaborn.py               # Seaborn for statistical visualization
+│   ├── 10-exception_handling.py
 │   ├── 11-multiprocessing.py
 │   ├── 12-multithreading.py
 │   ├── 13-decorator.py
 │   ├── 14-generator.py
-│   ├── pattern.ipynb               # Pattern programming exercises
+│   ├── pattern.py                  # Pattern programming exercises
 │   ├── README.md                   # Python learning guide
 │   └── slides/                     # Learning slides and materials
 │
+
 ├── ml/                             # Machine Learning
 │   ├── supervised_learning/
 │   │   ├── 01-linear_regression/
@@ -106,12 +107,12 @@ what-am-i-learning/
 │
 ├── deep_learning/                  # Deep Learning with PyTorch
 │   ├── 01-neural-network/
-│   │   └── neural-network.ipynb
+│   │   └── neural-network.py
 │   ├── 02-convolutional-neural-network/
-│   │   ├── cnn.ipynb
+│   │   ├── cnn.py
 │   │   └── data/MNIST/             # MNIST dataset
 │   └── 03-recurrent-neural/
-│       └── rnn.ipynb
+│       └── rnn.py
 │
 ├── dsa/                            # Data Structures & Algorithms
 │   ├── data_structures/
@@ -151,7 +152,7 @@ what-am-i-learning/
 │   └── README.md                   # SQL learning guide
 │
 ├── statistics/                     # Statistical concepts
-│   ├── normaliation-vs-standardization.ipynb
+│   ├── normaliation-vs-standardization.py
 │   └── statistics.md
 │
 ├── web_scraping/                   # Web scraping examples
@@ -165,7 +166,7 @@ what-am-i-learning/
 │   └── arch-pacman.md              # Arch Linux Pacman cheat sheet
 │
 ├── projects/                       # Complete data science projects
-│   ├── Data_sicence_project_workflow.ipynb
+│   ├── Data_sicence_project_workflow.py
 │   └── README.md                   # Projects guide
 │
 ├── data/                           # Centralized sample datasets
@@ -183,7 +184,6 @@ what-am-i-learning/
 │
 ├── pyproject.toml                  # Project configuration
 ├── requirements.txt                # Python dependencies
-├── requirements.in                 # Dependency source file
 ├── uv.lock                         # Lock file for uv
 └── LICENSE                         # MIT License
 ```
@@ -236,11 +236,6 @@ what-am-i-learning/
 
 ## 💻 Usage
 
-### Running Jupyter Notebooks
-```bash
-uv run jupyter notebook
-```
-
 ### Running Python Scripts
 ```bash
 uv run python your_script.py
@@ -282,7 +277,7 @@ pip install uv
 python --version
 
 # Use specific Python version with uv
-uv python install 3.12
+uv python install 3.12 # or uv python install 3.12+
 ```
 
 #### Issue: Jupyter kernel not found
@@ -489,7 +484,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🧮 [Data Structures & Algorithms](dsa/README.md) - DSA implementation guide
 - 🗄️ [SQL Learning](sql/README.md) - SQL tutorials and examples
 - 📊 [Projects](projects/README.md) - Data science project workflows
-- 📁 [Datasets](data/README.md) - Sample datasets documentation
 
 ### Key Resources
 - 📚 [Statistics](statistics/) - Statistical concepts and analysis
