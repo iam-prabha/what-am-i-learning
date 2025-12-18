@@ -46,7 +46,7 @@ Additional datasets can also be found in the main `../data/` directory.
 - **NumPy** - Numerical computing
 - **Matplotlib/Seaborn** - Data visualization
 - **Scikit-learn** - Machine learning algorithms
-- **PyTorch** - Deep learning (if applicable)
+- **PyTorch/Tensorflow** - Deep learning (if applicable choose one framework)
 
 ## 💡 Best Practices
 
@@ -68,12 +68,12 @@ Additional datasets can also be found in the main `../data/` directory.
 ## 🚀 Getting Started
 
 ```bash
-# From repository root, launch Jupyter
-uv run jupyter notebook projects/
+# To run files
+uv run file_name.py
 
 # Or navigate to projects directory first
 cd projects
-uv run jupyter notebook Data_sicence_project_workflow.ipynb
+uv run Data_sicence_project_workflow.py
 ```
 
 ### Loading Project Data
